@@ -1,0 +1,71 @@
+@import "../../index.module.scss";
+
+
+.container {
+  background-color: white;
+
+
+
+  .headerTopProducts {
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+    h2 {
+      font-size: 36px;
+    }
+
+    span {
+      color: #9f9f9f;
+    }
+  }
+
+  .bodyTopProducts {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FAF4F4; 
+      border-radius: 20px;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-right: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+
+      &:hover{
+        transform: scale(1.1);
+      }
+
+      .infoContainer{
+        h3{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .btnContainer{
+    background-color: #9f9f9f;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+}
